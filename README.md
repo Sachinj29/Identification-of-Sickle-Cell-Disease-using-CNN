@@ -61,10 +61,4 @@ This project focuses on developing a deep learning-based system to identify Sick
 
 ---
 
-## **Installation**
-
-### **Clone the Repository**
-```bash
-git clone https://github.com/your-username/scd-detection.git
-cd scd-detection
 
