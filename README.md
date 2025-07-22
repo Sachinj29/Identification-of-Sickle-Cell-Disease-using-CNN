@@ -1,64 +1,85 @@
-# **Identification of Sickle Cell Disease Using Deep Learning**
+# 🧬 Identification of Sickle Cell Disease Using Deep Learning
 
-## **Overview**
-This project focuses on developing a deep learning-based system to identify Sickle Cell Disease (SCD) from microscopic images of red blood cells. By leveraging Convolutional Neural Networks (CNN) and advanced models like MobileNet and Support Vector Machine (SVM) classifiers, the system aims to provide accurate and efficient classification, aiding in early detection and diagnosis of SCD.
-
----
-
-## **Features**
-- **Automated Detection**: Identifies sickle cells from microscopic images with high accuracy.
-- **Robust Classification**: Combines MobileNet for feature extraction and SVM for classification.
-- **Custom Dataset Support**: Trained and tested on a custom dataset of red blood cell images.
-- **Scalable Design**: Easily extendable for other medical imaging tasks.
+> A deep learning-based medical imaging solution that identifies **Sickle Cell Disease (SCD)** from microscopic red blood cell images using **MobileNet** and **SVM**, helping in accurate and early diagnosis.
 
 ---
 
-## **Technologies Used**
-- **Deep Learning Models**:
-  - MobileNet
-  - Convolutional Neural Networks (CNN)
-  - Support Vector Machine (SVM)
-- **Libraries and Tools**:
-  - TensorFlow
-  - Keras
-  - OpenCV
-  - NumPy
-  - Scikit-learn
-- **Programming Language**: Python
+## 📌 Overview
+
+This project focuses on developing an intelligent system that classifies red blood cells as **healthy** or **sickle-shaped** using modern computer vision and deep learning techniques. By leveraging **Convolutional Neural Networks (CNNs)** and the lightweight **MobileNet** architecture combined with **Support Vector Machines (SVM)**, the model achieves high classification accuracy while being resource-efficient.
 
 ---
 
-## **Dataset**
-- **Source**: Custom dataset containing labeled microscopic images of red blood cells.
+## ✨ Features
+
+- 🧠 **Automated Detection**  
+  Detects sickle cells in microscope images using deep learning.
+
+- 🧬 **Hybrid Model Architecture**  
+  Uses **MobileNet** for feature extraction and **SVM** for robust classification.
+
+- 🖼️ **Custom Dataset Support**  
+  Built on a labeled dataset of real red blood cell images.
+
+- 🔁 **Scalable & Modular**  
+  Easily adaptable to other disease classification tasks.
 
 ---
 
-- **Preprocessing**:
-- Image resizing to fit the MobileNet input size.
-- Data augmentation techniques such as rotation, flipping, and zooming to enhance diversity.
+## 🧰 Technologies Used
+
+| Category         | Tools & Libraries                |
+|------------------|----------------------------------|
+| Deep Learning    | MobileNet, CNN, SVM              |
+| Libraries        | TensorFlow, Keras, NumPy, OpenCV |
+| ML Evaluation    | Scikit-learn                     |
+| Language         | Python                           |
 
 ---
 
-## **Project Workflow**
-1. **Data Collection**
- - Gathered microscopic images of red blood cells, labeled as "healthy" or "sickle."
+## 📊 Dataset
 
-2. **Data Preprocessing**
- - Applied image resizing, normalization, and augmentation.
-
-3. **Model Development**
- - Used MobileNet as a feature extractor.
- - Integrated SVM for final classification.
-
-4. **Training**
- - Trained the model using the processed dataset with early stopping to prevent overfitting.
-
-5. **Evaluation**
- - Evaluated the model on unseen test data to measure accuracy and generalization.
-
-6. **Deployment**
- - Packaged the trained model for integration into desktop applications.
+- **Source**: Custom dataset of microscope images.
+- **Classes**:  
+  - `Healthy` red blood cells  
+  - `Sickle` (abnormal) red blood cells
 
 ---
 
+### 🔧 Preprocessing Steps
+
+- ✅ Resized images to `224x224` (MobileNet input format)  
+- ✅ Applied **data augmentation**:
+  - Random rotations
+  - Flipping
+  - Zooming  
+- ✅ Normalized pixel values for optimal model performance
+
+---
+
+## 🔄 Project Workflow
+
+### 1. 🗂️ Data Collection  
+Gathered a dataset of labeled microscopic images of red blood cells.
+
+### 2. 🧹 Data Preprocessing  
+Resized, normalized, and augmented data to increase training robustness.
+
+### 3. 🏗️ Model Development  
+- Used **MobileNet** as a pretrained feature extractor (transfer learning)  
+- Extracted features were passed to a **Support Vector Machine (SVM)** for classification
+
+### 4. 🧪 Training  
+- Trained with **early stopping** to prevent overfitting  
+- Used **validation split** to monitor performance during training
+
+### 5. 📈 Evaluation  
+- Tested on unseen data  
+- Evaluated accuracy, precision, recall, and F1-score
+
+### 6. 🚀 Deployment  
+- Exported the trained model  
+- Prepared for integration into GUI or desktop diagnostic applications
+
+---
 
